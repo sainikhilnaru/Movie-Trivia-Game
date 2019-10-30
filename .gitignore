@@ -1,0 +1,6 @@
+*.tsv
+*.csv
+*.xml
+*.class
+*.txt
+/text_files

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="409.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HighestRatedActorMovieController">
+    <children>
+        <VBox prefHeight="235.0" prefWidth="409.0">
+            <children>
+                <Pane prefHeight="116.0" prefWidth="409.0">
+                    <children>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="42.0" prefHeight="44.0" prefWidth="390.0" text="Highest rated movie an actor has been in between two years." textAlignment="CENTER" />
+                    </children>
+                </Pane>
+                <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label text="Actor Name: " GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+                        <Label text="Beginning of Range: " GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+                        <Label text="End of Range:" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+                        <TextField fx:id="actorName"  maxWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="begRange"  maxWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="endRange"  maxWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                    </children>
+                </GridPane>
+                <Pane prefHeight="63.0" prefWidth="409.0">
+                    <children>
+                        <Button fx:id="submitButton" layoutX="155.0" layoutY="13.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="100.0" text="Submit" textAlignment="CENTER" onAction="#handleSubmitButtonAction"/>
+                    </children>
+                </Pane>
+            </children>
+        </VBox>
+    </children>
+</Pane>
